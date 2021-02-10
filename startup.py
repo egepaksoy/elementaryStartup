@@ -26,4 +26,7 @@ else:
     os.system('echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list')
     os.system('sudo apt-get update')
     os.system('sudo apt-get install sublime-merge') 
+    os.system('sudo apt-get install gedit -y')
+    os.system('curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash')
+    os.system('nvm install --lts')
     os.system('rm setupLog.txt')
